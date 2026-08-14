@@ -2,6 +2,7 @@
   "expo": {
     "name": "expo-01",
     "slug": "expo-01",
+    "owner": "adrianovalenca-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -43,6 +44,18 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "e968072a-cef3-4cc8-b2fd-52c74da1aaae"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e968072a-cef3-4cc8-b2fd-52c74da1aaae"
     }
   }
 }
