@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet} from 'react-native';
 
-export default function CardComFoto({ imagem, titulo, descricao, onPress }) {
+export default function CardComFoto() {
     return (
         <View>
             <Image
-                source={'../public/Gemini_Generated_Image_gsch64gsch64gsch.webp'}
+                source={require("../assets/Gemini_Generated_Image_gsch64gsch64gsch.webp")}
                 style={styles.imagem}
                 resizeMode="cover"
             />

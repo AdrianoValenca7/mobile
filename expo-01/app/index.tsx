@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import Profile from '../components/Profile';
+import CardComFoto from '../components/Profile';
 
 export default function Index() {
   return (
@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-    <Profile/>
+    <CardComFoto />
     </View>
   );
 }
