@@ -1,11 +1,10 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
 export default function CalculadoraNascimento() {
   const [dia, setDia] = useState('');
   const [mes, setMes] = useState('');
   const [idade, setIdade] = useState('');
-  
   const [dataNascimento, setDataNascimento] = useState('');
 
   const calcularData = () => {
@@ -15,8 +14,7 @@ export default function CalculadoraNascimento() {
     }
 
     const anoAtual = new Date().getFullYear();
-    
-    const anoNascimento = anoAtual - parseInt(idade);
+    const anoNascimento = anoAtual - parseInt(idade, 10);
 
     const diaFormatado = dia.padStart(2, '0');
     const mesFormatado = mes.padStart(2, '0');
@@ -25,10 +23,9 @@ export default function CalculadoraNascimento() {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.cardContainer}>
       <Text style={styles.titulo}>Descobrir Data de Nascimento</Text>
 
-      {/* Inputs lado a lado */}
       <View style={styles.row}>
         <View style={styles.inputGroup}>
           <Text style={styles.label}>Dia</Text>
@@ -82,17 +79,26 @@ export default function CalculadoraNascimento() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
+  cardContainer: {
+    width: '100%',
+    maxWidth: 380,
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    borderWidth: 1,
+    borderColor: '#e2e8f0',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.05,
+    shadowRadius: 8,
+    elevation: 2,
   },
   titulo: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 20,
+    color: '#0f172a',
   },
   row: {
     flexDirection: 'row',
@@ -101,50 +107,52 @@ const styles = StyleSheet.create({
   },
   inputGroup: {
     flex: 1,
-    marginHorizontal: 5,
+    marginHorizontal: 4,
   },
   label: {
-    fontSize: 14,
-    marginBottom: 5,
-    color: '#333',
+    fontSize: 13,
+    marginBottom: 6,
+    color: '#475569',
+    fontWeight: '500',
   },
   input: {
-    height: 50,
-    backgroundColor: '#fff',
+    height: 48,
+    backgroundColor: '#f8fafc',
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#cbd5e1',
     borderRadius: 8,
     textAlign: 'center',
     fontSize: 16,
+    color: '#0f172a',
   },
   botao: {
-    backgroundColor: '#007AFF',
-    padding: 15,
+    backgroundColor: '#2563eb',
+    paddingVertical: 14,
     borderRadius: 8,
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 16,
   },
   textoBotao: {
-    color: '#fff',
-    fontSize: 16,
+    color: '#ffffff',
+    fontSize: 15,
     fontWeight: 'bold',
   },
   boxResultado: {
-    backgroundColor: '#e3f2fd',
-    padding: 15,
+    backgroundColor: '#eff6ff',
+    padding: 14,
     borderRadius: 8,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#90caf9',
+    borderColor: '#bfdbfe',
   },
   labelResultado: {
-    fontSize: 14,
-    color: '#1565c0',
+    fontSize: 13,
+    color: '#1d4ed8',
   },
   resultado: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: '#0d47a1',
-    marginTop: 5,
+    color: '#1e40af',
+    marginTop: 4,
   },
 });

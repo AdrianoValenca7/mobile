@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, StatusBar } from 'react-native';
-import MiniBio from '../components/CalculadoraNascimento';
+import { StyleSheet, SafeAreaView, StatusBar, Text } from 'react-native';
+import CalculadoraNascimento from '../components/CalculadoraNascimento';
 
 export default function App() {
   return (
@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   title: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '600',
     color: '#334155',
     textAlign: 'center',
-    marginBottom: 32,
-    paddingHorizontal: 10,
+    marginBottom: 28,
+    paddingHorizontal: 12,
   },
 });
