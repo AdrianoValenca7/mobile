@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "expo01",
+    "scheme": "expo02",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -34,28 +34,21 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    },
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "e968072a-cef3-4cc8-b2fd-52c74da1aaae"
+        "projectId": "6d3f6f79-b102-416c-8708-c7b609971ac6"
       }
     },
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/e968072a-cef3-4cc8-b2fd-52c74da1aaae"
+      "url": "https://u.expo.dev/6d3f6f79-b102-416c-8708-c7b609971ac6"
     }
   }
 }
