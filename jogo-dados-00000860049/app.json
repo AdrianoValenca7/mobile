@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "jogo-dados-00000860049",
+    "slug": "jogo-dados-00000860049",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85c3a2d1-b4bb-4aa0-82a3-76382d575065"
+      }
+    },
+    "owner": "adrianovalenca-app",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/85c3a2d1-b4bb-4aa0-82a3-76382d575065"
+    }
+  }
+}
